@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+<div>
+  E-Choice Informatie Folder 
+
+</div>
+
+
+{% endblock %}
+
+{% block body %}
+<!-- Welkom om de informatie folder website van E-choice!<br>
+Selecteer een opleiding naar keuze om een overzicht te krijgen van de verschillende voorlichtingsmodules.<br>
+<br>
+{{data_request}} <br>
+<br>
+opleiding_selected : {{opleiding_selected}} <br>
+<br>
+opleiding_info : {{opleiding_info}} <br> -->
+
+<script type="text/javascript">
+  $(document).ready(function(){
+  $("#id_opleiding_selected").val($('#filter_opleiding').val());
+
+	$( "#filter_opleiding" ).change(function() {
+	  $("#id_opleiding_selected").val($('#filter_opleiding').val());
+	});
+  }); 
+</script>
+
+<style>
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+
+<form method="POST" class="post-form">{% csrf_token %}
+<div class="col-md-3">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+	    	<h3 class="panel-title">Zoek</h3>
+	  	</div>
+	  	<div class="panel-body ">
+	  		
+	  		Filter op opleiding: <br>
+
+	  		<select id="filter_opleiding" onchange="OpleidingSelect()"> 
+				{% for i in opleidingen%}
+					{% if i == opleiding_selected %}
+	      				<option value="{{i}}" selected > {{i}} </option>
+	      			{% else %}
+	      				<option value="{{i}}"> {{i}} </option>
+      				{% endif %}
+      			{% endfor %}
+
+				{% if opleiding_selected == 'None' %}
+					<option value="None" selected > --- </option>
+				{% else %}
+					<option value="None"> --- </option>
+				{% endif %}
+	  		</select>
+
+	  		<div style="display:none">
+	  			{{form_opleidingselect}}
+	  		</div>
+	  		<br>
+	  		<br>
+	  		<button class="btn btn-primary" type="submit"> Zoek </button>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="col-md-9">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+	    	<h3 class="panel-title">Informatie</h3>
+	  	</div>
+	  	<div class="panel-body ">
+
+
+	  	{% if opleiding_selected != 'None' %}
+	  		<div class="table-responsive"> 
+				<table class="table table-hover table-condensed">
+				
+				<thead>
+					<tr>
+					<th>Module</th>
+					<th>Omschrijving</th>
+					<th>Kosten</th>
+					<th>Baten </th>
+					<th>Data </th>
+					<th>Beschikbaarheid </th>
+					</tr>
+				</thead>
+
+				{% for i in opleiding_modules %}
+					<tbody>
+						<tr class="table">
+						<td style ="word-wrap:break-word;"> {{i.naam}} </td>
+						<td style ="word-wrap:break-word"> {{i.omschrijving}} </div> </td>
+						<td style ="word-wrap:break-word" > <div style="color:red"> {{i.kosten}} </div> </td>
+						<td style ="word-wrap:break-word"> <span style="color:green"> {{i.baten_vast}} </span> 
+							{% if i.module_type == "Actief" %}
+							+ <span style="color:orange"> ( cijfer module ) * {{i.factor}} </span>
+							{% endif %}
+						</td>
+						<td > 
+							<ol>
+								{% if now < i.date1 %}
+									<li> {{i.date1}} </li>
+								{% endif %}
+								{% if now < i.date2 %}
+									<li> {{i.date2}} </li>
+								{% endif %}
+								{% if now < i.date3 %}
+									<li> {{i.date3}} </li>
+								{% endif %}
+							</ol>
+						</td>
+						<td style ="word-break:break-all;"> 
+							{% if i.status == "Beschikbaar" %}
+								<span style="color:green"> Beschikbaar </span> 
+							{% else %}
+								<span style="color:red"> Niet beschikbaar </span>
+							{% endif %}
+						</td>
+						</tr>
+							
+					</tbody>
+				{% endfor %}
+			
+				</table>
+
+			</div>
+		{% endif %}
+	  		
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+{% endblock %}	
