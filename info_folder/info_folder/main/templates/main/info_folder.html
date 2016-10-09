@@ -90,6 +90,7 @@ tr:nth-child(even) {
 					<tr>
 					<th>Module</th>
 					<th>Omschrijving</th>
+					<th>Gebied </th>
 					<th>Kosten</th>
 					<th>Baten </th>
 					<th>Data </th>
@@ -101,7 +102,8 @@ tr:nth-child(even) {
 					<tbody>
 						<tr class="table">
 						<td style ="word-wrap:break-word;"> {{i.naam}} </td>
-						<td style ="word-wrap:break-word"> {{i.omschrijving}} </div> </td>
+						<td style ="word-wrap:break-word"> {{i.omschrijving|safe}} </div> </td>
+						<td style ="word-wrap:break-word"> {{i.gebied}} </div> </td>
 						<td style ="word-wrap:break-word" > <div style="color:red"> {{i.kosten}} </div> </td>
 						<td style ="word-wrap:break-word"> <span style="color:green"> {{i.baten_vast}} </span> 
 							{% if i.module_type == "Actief" %}

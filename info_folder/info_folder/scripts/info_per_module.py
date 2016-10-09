@@ -108,10 +108,10 @@ def run():
         if i == 'Wiskunde':
             p = ModulesInfo(
                 opleiding = 'Wiskunde',
-                gebied='studie',
+                gebied='Studie',
                 naam='opendag op locatie',
                 id_module = 'opendag',
-                omschrijving='Een specifieke opleiding beter leren kennen',
+                omschrijving='Een specifieke opleiding beter leren kennen <br> <a href="https://www.google.nl/?gws_rd=ssl">Google </a>',
                 tijd=8,
                 kosten=240,
                 experience_vast=192,
@@ -123,7 +123,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Wiskunde',
-                gebied='studie',
+                gebied='Studie',
                 naam = 'Webklas',
                 id_module = 'webklas',
                 omschrijving='Online cursus over bepaalde bachelor opleidingen',
@@ -141,7 +141,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Wiskunde',
-                gebied='studiesociaal',
+                gebied='Studie / Sociaal',
                 naam='Een dag student',
                 id_module = 'dag_student',
                 omschrijving='Een dagje student zijn',
@@ -157,7 +157,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Wiskunde',
-                gebied='toekomst',
+                gebied='Toekomst',
                 naam = 'Case voor een bedrijf',
                 id_module = 'case',
                 omschrijving='Een probleem oplossen voor een bedrijf',
@@ -175,7 +175,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Wiskunde',
-                gebied='sociaaltoekomst',
+                gebied='Sociaal / Toekomst',
                 naam='Excursie met studievereniging',
                 id_module = 'excursie',
                 omschrijving='Bij een bedrijf op bezoek',
@@ -192,7 +192,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Wiskunde',
-                gebied='sociaal',
+                gebied='Sociaal',
                 naam='Borrel studievereniging',
                 id_module = 'borrel',
                 omschrijving='Vrijdag middag borrel met lezing/praatje',
@@ -208,7 +208,7 @@ def run():
         if i == 'natuurkunde':
             p = ModulesInfo(
                 opleiding = 'Natuurkunde',
-                gebied='studie',
+                gebied='Studie',
                 naam='opendag op locatie',
                 id_module = 'opendag',
                 omschrijving='Een specifieke opleiding beter leren kennen',
@@ -223,7 +223,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Natuurkunde',
-                gebied='studie',
+                gebied='Studie',
                 naam = 'Webklas',
                 id_module = 'webklas',
                 omschrijving='Online cursus over bepaalde bachelor opleidingen',
@@ -241,7 +241,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Natuurkunde',
-                gebied='studiesociaal',
+                gebied='Studie / Sociaal',
                 naam='Een dag student',
                 id_module = 'dag_student',
                 omschrijving='Een dagje student zijn',
@@ -257,7 +257,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Natuurkunde',
-                gebied='toekomst',
+                gebied='Toekomst',
                 naam = 'Case voor een bedrijf',
                 id_module = 'case',
                 omschrijving='Een probleem oplossen voor een bedrijf',
@@ -275,7 +275,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Natuurkunde',
-                gebied='sociaaltoekomst',
+                gebied='Sociaal / Toekomst',
                 naam='Excursie met studievereniging',
                 id_module = 'excursie',
                 omschrijving='Bij een bedrijf op bezoek',
@@ -292,7 +292,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Natuurkunde',
-                gebied='sociaal',
+                gebied='Sociaal',
                 naam='Borrel studievereniging',
                 id_module = 'borrel',
                 omschrijving='Vrijdag middag borrel met lezing/praatje',
@@ -308,7 +308,7 @@ def run():
         if i == 'scheikunde':
             p = ModulesInfo(
                 opleiding = 'scheikunde',
-                gebied='studie',
+                gebied='Studie',
                 naam='opendag op locatie',
                 id_module = 'opendag',
                 omschrijving='Een specifieke opleiding beter leren kennen',
@@ -323,7 +323,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'scheikunde',
-                gebied='studie',
+                gebied='Studie',
                 naam = 'Webklas',
                 id_module = 'webklas',
                 omschrijving='Online cursus over bepaalde bachelor opleidingen',
@@ -341,7 +341,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'scheikunde',
-                gebied='studiesociaal',
+                gebied='Studie / Sociaal',
                 naam='Een dag student',
                 id_module = 'dag_student',
                 omschrijving='Een dagje student zijn',
@@ -357,7 +357,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'scheikunde',
-                gebied='toekomst',
+                gebied='Toekomst',
                 naam = 'Case voor een bedrijf',
                 id_module = 'case',
                 omschrijving='Een probleem oplossen voor een bedrijf',
@@ -375,7 +375,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'scheikunde',
-                gebied='sociaaltoekomst',
+                gebied='Sociaal / Toekomst',
                 naam='Excursie met studievereniging',
                 id_module = 'excursie',
                 omschrijving='Bij een bedrijf op bezoek',
@@ -392,7 +392,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'scheikunde',
-                gebied='sociaal',
+                gebied='Sociaal',
                 naam='Borrel studievereniging',
                 id_module = 'borrel',
                 omschrijving='Vrijdag middag borrel met lezing/praatje',
@@ -408,7 +408,7 @@ def run():
         if i == 'Sterrenkunde':
             p = ModulesInfo(
                 opleiding = 'Sterrenkunde',
-                gebied='studie',
+                gebied='Studie',
                 naam='opendag op locatie',
                 id_module = 'opendag',
                 omschrijving='Een specifieke opleiding beter leren kennen',
@@ -423,7 +423,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Sterrenkunde',
-                gebied='studie',
+                gebied='Studie',
                 naam = 'Webklas',
                 id_module = 'webklas',
                 omschrijving='Online cursus over bepaalde bachelor opleidingen',
@@ -441,7 +441,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Sterrenkunde',
-                gebied='studiesociaal',
+                gebied='Studiesociaal',
                 naam='Een dag student',
                 id_module = 'dag_student',
                 omschrijving='Een dagje student zijn',
@@ -457,7 +457,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Sterrenkunde',
-                gebied='toekomst',
+                gebied='Toekomst',
                 naam = 'Case voor een bedrijf',
                 id_module = 'case',
                 omschrijving='Een probleem oplossen voor een bedrijf',
@@ -475,7 +475,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Sterrenkunde',
-                gebied='sociaaltoekomst',
+                gebied='Sociaal / Toekomst',
                 naam='Excursie met studievereniging',
                 id_module = 'excursie',
                 omschrijving='Bij een bedrijf op bezoek',
@@ -492,7 +492,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Sterrenkunde',
-                gebied='sociaal',
+                gebied='Sociaal',
                 naam='Borrel studievereniging',
                 id_module = 'borrel',
                 omschrijving='Vrijdag middag borrel met lezing/praatje',
@@ -508,7 +508,7 @@ def run():
         if i == 'Biologie':
             p = ModulesInfo(
                 opleiding = 'Biologie',
-                gebied='studie',
+                gebied='Studie',
                 naam='opendag op locatie',
                 id_module = 'opendag',
                 omschrijving='Een specifieke opleiding beter leren kennen',
@@ -523,7 +523,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Biologie',
-                gebied='studie',
+                gebied='Studie',
                 naam = 'Webklas',
                 id_module = 'webklas',
                 omschrijving='Online cursus over bepaalde bachelor opleidingen',
@@ -541,7 +541,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Biologie',
-                gebied='studiesociaal',
+                gebied='Studie / Sociaal',
                 naam='Een dag student',
                 id_module = 'dag_student',
                 omschrijving='Een dagje student zijn',
@@ -557,7 +557,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Biologie',
-                gebied='toekomst',
+                gebied='Toekomst',
                 naam = 'Case voor een bedrijf',
                 id_module = 'case',
                 omschrijving='Een probleem oplossen voor een bedrijf',
@@ -575,7 +575,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Biologie',
-                gebied='sociaaltoekomst',
+                gebied='Sociaal / Toekomst',
                 naam='Excursie met studievereniging',
                 id_module = 'excursie',
                 omschrijving='Bij een bedrijf op bezoek',
@@ -592,7 +592,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Biologie',
-                gebied='sociaal',
+                gebied='Sociaal',
                 naam='Borrel studievereniging',
                 id_module = 'borrel',
                 omschrijving='Vrijdag middag borrel met lezing/praatje',
@@ -608,7 +608,7 @@ def run():
         if i == 'Life Science and Technology':
             p = ModulesInfo(
                 opleiding = 'Life Science and Technology',
-                gebied='studie',
+                gebied='Studie',
                 naam='opendag op locatie',
                 id_module = 'opendag',
                 omschrijving='Een specifieke opleiding beter leren kennen',
@@ -623,7 +623,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Life Science and Technology',
-                gebied='studie',
+                gebied='Studie',
                 naam = 'Webklas',
                 id_module = 'webklas',
                 omschrijving='Online cursus over bepaalde bachelor opleidingen',
@@ -641,7 +641,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Life Science and Technology',
-                gebied='studiesociaal',
+                gebied='Studie / Sociaal',
                 naam='Een dag student',
                 id_module = 'dag_student',
                 omschrijving='Een dagje student zijn',
@@ -657,7 +657,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Life Science and Technology',
-                gebied='toekomst',
+                gebied='Toekomst',
                 naam = 'Case voor een bedrijf',
                 id_module = 'case',
                 omschrijving='Een probleem oplossen voor een bedrijf',
@@ -675,7 +675,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Life Science and Technology',
-                gebied='sociaaltoekomst',
+                gebied='Sociaal / Toekomst',
                 naam='Excursie met studievereniging',
                 id_module = 'excursie',
                 omschrijving='Bij een bedrijf op bezoek',
@@ -692,7 +692,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Life Science and Technology',
-                gebied='sociaal',
+                gebied='Sociaal',
                 naam='Borrel studievereniging',
                 id_module = 'borrel',
                 omschrijving='Vrijdag middag borrel met lezing/praatje',
@@ -708,7 +708,7 @@ def run():
         if i == 'Farmacie':
             p = ModulesInfo(
                 opleiding = 'Farmacie',
-                gebied='studie',
+                gebied='Studie',
                 naam='opendag op locatie',
                 id_module = 'opendag',
                 omschrijving='Een specifieke opleiding beter leren kennen',
@@ -723,7 +723,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Farmacie',
-                gebied='studie',
+                gebied='Studie',
                 naam = 'Webklas',
                 id_module = 'webklas',
                 omschrijving='Online cursus over bepaalde bachelor opleidingen',
@@ -741,7 +741,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Farmacie',
-                gebied='studiesociaal',
+                gebied='Studie / Sociaal',
                 naam='Een dag student',
                 id_module = 'dag_student',
                 omschrijving='Een dagje student zijn',
@@ -757,7 +757,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Farmacie',
-                gebied='toekomst',
+                gebied='Toekomst',
                 naam = 'Case voor een bedrijf',
                 id_module = 'case',
                 omschrijving='Een probleem oplossen voor een bedrijf',
@@ -775,7 +775,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Farmacie',
-                gebied='sociaaltoekomst',
+                gebied='Sociaal / Toekomst',
                 naam='Excursie met studievereniging',
                 id_module = 'excursie',
                 omschrijving='Bij een bedrijf op bezoek',
@@ -792,7 +792,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Farmacie',
-                gebied='sociaal',
+                gebied='Sociaal',
                 naam='Borrel studievereniging',
                 id_module = 'borrel',
                 omschrijving='Vrijdag middag borrel met lezing/praatje',
@@ -808,7 +808,7 @@ def run():
         if i == 'Informatica':
             p = ModulesInfo(
                 opleiding = 'Informatica',
-                gebied='studie',
+                gebied='Studie',
                 naam='opendag op locatie',
                 id_module = 'opendag',
                 omschrijving='Een specifieke opleiding beter leren kennen',
@@ -823,7 +823,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Informatica',
-                gebied='studie',
+                gebied='Studie',
                 naam = 'Webklas',
                 id_module = 'webklas',
                 omschrijving='Online cursus over bepaalde bachelor opleidingen',
@@ -841,7 +841,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Informatica',
-                gebied='studiesociaal',
+                gebied='Studie / Sociaal',
                 naam='Een dag student',
                 id_module = 'dag_student',
                 omschrijving='Een dagje student zijn',
@@ -857,7 +857,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Informatica',
-                gebied='toekomst',
+                gebied='Toekomst',
                 naam = 'Case voor een bedrijf',
                 id_module = 'case',
                 omschrijving='Een probleem oplossen voor een bedrijf',
@@ -875,7 +875,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Informatica',
-                gebied='sociaaltoekomst',
+                gebied='Sociaal / Toekomst',
                 naam='Excursie met studievereniging',
                 id_module = 'excursie',
                 omschrijving='Bij een bedrijf op bezoek',
@@ -892,7 +892,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Informatica',
-                gebied='sociaal',
+                gebied='Sociaal',
                 naam='Borrel studievereniging',
                 id_module = 'borrel',
                 omschrijving='Vrijdag middag borrel met lezing/praatje',
@@ -908,7 +908,7 @@ def run():
         if i == 'Kunstmatige Intelligentie':
             p = ModulesInfo(
                 opleiding = 'Kunstmatige Intelligentie',
-                gebied='studie',
+                gebied='Studie',
                 naam='opendag op locatie',
                 id_module = 'opendag',
                 omschrijving='Een specifieke opleiding beter leren kennen',
@@ -923,7 +923,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Kunstmatige Intelligentie',
-                gebied='studie',
+                gebied='Studie',
                 naam = 'Webklas',
                 id_module = 'webklas',
                 omschrijving='Online cursus over bepaalde bachelor opleidingen',
@@ -941,7 +941,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Kunstmatige Intelligentie',
-                gebied='studiesociaal',
+                gebied='Studie / Sociaal',
                 naam='Een dag student',
                 id_module = 'dag_student',
                 omschrijving='Een dagje student zijn',
@@ -957,7 +957,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Kunstmatige Intelligentie',
-                gebied='toekomst',
+                gebied='Toekomst',
                 naam = 'Case voor een bedrijf',
                 id_module = 'case',
                 omschrijving='Een probleem oplossen voor een bedrijf',
@@ -975,7 +975,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Kunstmatige Intelligentie',
-                gebied='sociaaltoekomst',
+                gebied='Sociaal / Toekomst',
                 naam='Excursie met studievereniging',
                 id_module = 'excursie',
                 omschrijving='Bij een bedrijf op bezoek',
@@ -992,7 +992,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Kunstmatige Intelligentie',
-                gebied='sociaal',
+                gebied='Sociaal',
                 naam='Borrel studievereniging',
                 id_module = 'borrel',
                 omschrijving='Vrijdag middag borrel met lezing/praatje',
@@ -1008,7 +1008,7 @@ def run():
         if i == 'Technische Bedrijfskunde':
             p = ModulesInfo(
                 opleiding = 'Technische Bedrijfskunde',
-                gebied='studie',
+                gebied='Studie',
                 naam='opendag op locatie',
                 id_module = 'opendag',
                 omschrijving='Een specifieke opleiding beter leren kennen',
@@ -1023,7 +1023,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Technische Bedrijfskunde',
-                gebied='studie',
+                gebied='Studie',
                 naam = 'Webklas',
                 id_module = 'webklas',
                 omschrijving='Online cursus over bepaalde bachelor opleidingen',
@@ -1041,7 +1041,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Technische Bedrijfskunde',
-                gebied='studiesociaal',
+                gebied='Studie / Sociaal',
                 naam='Een dag student',
                 id_module = 'dag_student',
                 omschrijving='Een dagje student zijn',
@@ -1057,7 +1057,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Technische Bedrijfskunde',
-                gebied='toekomst',
+                gebied='Toekomst',
                 naam = 'Case voor een bedrijf',
                 id_module = 'case',
                 omschrijving='Een probleem oplossen voor een bedrijf',
@@ -1075,7 +1075,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Technische Bedrijfskunde',
-                gebied='sociaaltoekomst',
+                gebied='Sociaal / Toekomst',
                 naam='Excursie met studievereniging',
                 id_module = 'excursie',
                 omschrijving='Bij een bedrijf op bezoek',
@@ -1092,7 +1092,7 @@ def run():
             p.save()
             p = ModulesInfo(
                 opleiding = 'Technische Bedrijfskunde',
-                gebied='sociaal',
+                gebied='Sociaal',
                 naam='Borrel studievereniging',
                 id_module = 'borrel',
                 omschrijving='Vrijdag middag borrel met lezing/praatje',
